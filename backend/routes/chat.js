@@ -89,7 +89,7 @@ ${diary.map(d => `- ${d.date}: ${d.title || 'без названия'} (наст
 
     // Call Gemini API
     const geminiRes = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
         system_instruction: { parts: [{ text: context }] },
         contents,
