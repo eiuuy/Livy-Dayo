@@ -1,0 +1,81 @@
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes checkPop {
+  0%   { transform: scale(0) rotate(-10deg); }
+  60%  { transform: scale(1.3) rotate(5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+@keyframes progressSlide {
+  from { width: 0%; }
+}
+
+@keyframes bubbleIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.anim-fadeUp   { animation: fadeUp .4s cubic-bezier(.4,0,.2,1) both; }
+.anim-fadeIn   { animation: fadeIn .3s ease both; }
+.anim-slideIn  { animation: slideIn .35s cubic-bezier(.4,0,.2,1) both; }
+.anim-checkPop { animation: checkPop .3s cubic-bezier(.4,0,.2,1) both; }
+.anim-pulse    { animation: pulse 2s ease-in-out infinite; }
+.anim-bubble   { animation: bubbleIn .3s cubic-bezier(.4,0,.2,1) both; }
+
+.delay-1 { animation-delay: .07s; }
+.delay-2 { animation-delay: .14s; }
+.delay-3 { animation-delay: .21s; }
+.delay-4 { animation-delay: .28s; }
+.delay-5 { animation-delay: .35s; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background .3s ease;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { border-radius: 2px; }
+
+input, select, textarea, button { font-family: inherit; }
+
+.hover-lift {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-right {
+  transition: transform .15s ease;
+}
+.hover-right:hover {
+  transform: translateX(3px);
+}
+
+.press:active {
+  transform: scale(0.97);
+}
