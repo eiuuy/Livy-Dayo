@@ -28,7 +28,7 @@ export default function AuthPage() {
       <div className="anim-fadeUp" style={{ background:t.bgCard, borderRadius:24, padding:'40px 36px', width:'100%', maxWidth:400, border:`1px solid ${t.border}`, boxShadow:`0 20px 60px ${t.shadow}`, position:'relative' }}>
         <button onClick={cycleTheme} style={{ position:'absolute', top:16, right:16, background:'none', border:`1px solid ${t.border}`, borderRadius:10, padding:'4px 10px', fontSize:18, cursor:'pointer' }}>{t.emoji}</button>
         <div style={{ fontSize:52, textAlign:'center', marginBottom:8 }}>🌿</div>
-        <h1 style={{ color:t.text, fontSize:28, fontWeight:700, textAlign:'center', margin:0 }}>LifeTrack</h1>
+        <h1 style={{ color:t.text, fontSize:28, fontWeight:700, textAlign:'center', margin:0 }}>Livy-Dayo</h1>
         <p style={{ color:t.textMuted, textAlign:'center', marginBottom:28, marginTop:4, fontSize:13 }}>Привычки · Финансы · Книги · Дневник · ИИ</p>
         <div style={{ display:'flex', background:t.bgSecondary, borderRadius:12, padding:4, marginBottom:24 }}>
           {['login','register'].map(m => (

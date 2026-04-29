@@ -23,7 +23,7 @@ function Layout() {
   return (
     <div style={{ maxWidth:480, margin:'0 auto', minHeight:'100vh', background:t.bg, display:'flex', flexDirection:'column', position:'relative', transition:'background .3s' }}>
       <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', padding:'12px 20px', background:t.bgNav, borderBottom:`1px solid ${t.border}`, flexShrink:0 }}>
-        <span style={{ color:t.text, fontWeight:700, fontSize:16 }}>🌿 LifeTrack</span>
+        <span style={{ color:t.text, fontWeight:700, fontSize:16 }}>🌸 Livy-Dayo</span>
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <button onClick={cycleTheme} style={{ background:'none', border:`1px solid ${t.border}`, borderRadius:10, padding:'3px 9px', fontSize:16, cursor:'pointer' }}>{t.emoji}</button>
           <span style={{ color:t.textMuted, fontSize:13 }}>{user?.name || user?.email?.split('@')[0]}</span>

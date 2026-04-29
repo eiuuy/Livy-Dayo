@@ -51,7 +51,7 @@ router.post('/send', auth, async (req, res) => {
     const expense = finance.filter(f => f.type === 'expense').reduce((a, b) => a + parseFloat(b.total), 0);
 
     const context = `
-Ты личный ИИ-помощник пользователя в приложении LifeTrack. Ты знаешь данные пользователя:
+Ты личный ИИ-помощник пользователя в приложении Livy-Dayo. Ты знаешь данные пользователя:
 
 📅 ПРИВЫЧКИ СЕГОДНЯ (${today}):
 ${habits.map(h => `- ${h.icon} ${h.name}: ${h.done_today ? '✅ выполнено' : '⬜ не выполнено'}`).join('\n') || 'нет привычек'}
